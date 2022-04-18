@@ -1,248 +1,494 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Instagram</title>
 </head>
 
 <body>
-    <!-- NAV BAR -->
-    <div class="container-fluid border  fixed-top" style="height: 54px; background-color: white;">
-        <div class="container" style="height: 54px;">
-            <nav class="row navbar navbar-expand-sm navbar-light">
-                <div class="col-8 offset-2">
-                    <div class="row">
-                        <div class="col-4 logo mt-2 mb-3">
-                            <a href="navbar-brand">
-                                <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                                    alt="">
-                            </a>
+
+    <div class="" style="margin:auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col- offset-3">
+                    <nav class="navbar navbar-expand-lg navbar-light border fixed-top"
+                        style="background-color: #ffffff; height: 54px">
+                        <div class="ml-lg-5 ">
+                            <div class="ml-lg-5">
+                                <div class="ml-lg-5">
+                                    <a class="navbar-brand ml-lg-5 mt-1 mr-5" href="#"><img
+                                            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" /></a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon mr-5"></span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4 mt-2 mb-3">
-                            <form class="d-flex justify-content-end">
-                                <input style="height: 28px; width: 216px;" class="form-control me-2" type="search"
-                                    placeholder="Ara" aria-label="Search">
+                        <div class="collapse navbar-collapse ml-5 d-flex justify-content-center">
+                            <form class="form-inline my-2 my-lg-0 ml-5 d-none d-sm-block">
+                                <input class="form-control mr-sm-2 empty" type="search" placeholder="      Ara"
+                                    style="font-family: Arial, FontAwesome; height: 28px; width: 216px"
+                                    aria-label="Search" />
                             </form>
                         </div>
-                        <div class="col-4 navbar d-flex justify-content-end">
+                        <div class="collapse navbar-collapse ml-5 mt-2" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <!-- Buton 1 -->
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#"><i
+                                            class="fas fa-home fa-lg mr-2 d-none d-sm-block mt-1"></i>
+                                        <span class="sr-only">(current)</span></a>
+                                </li>
                                 <li class="nav-item">
-                                    <a href="#" tabindex="0"><svg aria-label="Ana Sayfa" class="_8-yf5 " color="#262626"
-                                            fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
-                                            <path
-                                                d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z">
-                                            </path>
-                                        </svg></a>
+                                    <a class="nav-link" href="#"><i
+                                            class="fab fa-facebook-messenger fa-lg mr-2 d-none d-sm-block mt-1"
+                                            style="color: black"></i></a>
                                 </li>
-                                <!-- Buton 2 -->
-                                <li class="nav-item ms-4 mb-3">
-                                    <a href="#">
-                                        <svg aria-label="Messenger" class="_8-yf5 " color="#262626" fill="#262626"
-                                            height="24" role="img" viewBox="0 0 24 24" width="24">
-                                            <path
-                                                d="M12.003 2.001a9.705 9.705 0 110 19.4 10.876 10.876 0 01-2.895-.384.798.798 0 00-.533.04l-1.984.876a.801.801 0 01-1.123-.708l-.054-1.78a.806.806 0 00-.27-.569 9.49 9.49 0 01-3.14-7.175 9.65 9.65 0 0110-9.7z"
-                                                fill="none" stroke="currentColor" stroke-miterlimit="10"
-                                                stroke-width="1.739">
-                                            </path>
-                                            <path
-                                                d="M17.79 10.132a.659.659 0 00-.962-.873l-2.556 2.05a.63.63 0 01-.758.002L11.06 9.47a1.576 1.576 0 00-2.277.42l-2.567 3.98a.659.659 0 00.961.875l2.556-2.049a.63.63 0 01.759-.002l2.452 1.84a1.576 1.576 0 002.278-.42z"
-                                                fill-rule="evenodd"></path>
-                                        </svg>
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i
+                                            class="far fa-compass fa-lg mr-2 d-none d-sm-block mt-1"
+                                            style="color: black"></i></a>
                                 </li>
-                                <!-- Buton 3 -->
-                                <li class="nav-item ms-4">
-                                    <a href="#">
-                                        <svg aria-label="Yeni Gönderi" class="_8-yf5 " color="#262626" fill="#262626"
-                                            height="24" role="img" viewBox="0 0 24 24" width="24">
-                                            <path
-                                                d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
-                                                fill="none" stroke="currentColor" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-width="2"></path>
-                                            <line fill="none" stroke="currentColor" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455"
-                                                y1="12.001" y2="12.001"></line>
-                                            <line fill="none" stroke="currentColor" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003"
-                                                y1="6.545" y2="17.455"></line>
-                                        </svg>
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i
+                                            class="far fa-heart fa-lg mr-2 d-none d-sm-block mt-1"
+                                            style="color: black"></i></a>
                                 </li>
-                                <!-- Buton 4 -->
-                                <li class="nav-item ms-4">
-                                    <a href="#">
-                                        <svg aria-label="Kişiler Bul" class="_8-yf5 " color="#262626" fill="#262626"
-                                            height="24" role="img" viewBox="0 0 24 24" width="24">
-                                            <polygon fill="none"
-                                                points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
-                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2">
-                                            </polygon>
-                                            <polygon fill-rule="evenodd"
-                                                points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056">
-                                            </polygon>
-                                            <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor"
-                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                            </circle>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <!-- Buton 5 -->
-                                <li class="nav-item ms-4">
-                                    <a href="#"><svg aria-label="Hareket Akışı" class="_8-yf5 " color="#262626"
-                                            fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
-                                            <path
-                                                d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
-                                            </path>
-                                        </svg></a>
-                                </li>
-                                <!-- Buton 6 Profil Resmi -->
-                                <li class="nav-item ms-4">
-                                    <a href="#">
-                                        <img style="width: 23px; height: 23px; border-radius: 50%;"
-                                            src="https://imgyukle.com/f/2022/04/01/E9voQp.jpg" alt="">
-                                    </a>
+                                <li class="nav-item">
+                                    <a class="nav-link d-none d-sm-block"
+                                        href="https://www.instagram.com/cengizcmataraci" target="_blank"><img
+                                            style="width:30px; height:30px; border-radius:50%" alt="" class="_6q-tv"
+                                            crossorigin="anonymous" data-testid="user-avatar" draggable="false"
+                                            src="./images/taha.jpg"></a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <!-- logo ve arama butonu -->
-
-                <!-- butonlar !!!! -->
-
-            </nav>
-        </div>
-    </div>
-
-    <!-- ALT KISIM -->
-    <br>
-    <br>
-    <br>
-    <div class="container mt-1">
-        <div class="row">
-            <div class="col-8 offset-2">
-                <div class="row">
-                    <div class="col-8 border">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto suscipit sint deserunt
-                        inventore.
-                        Cumque quas laborum tenetur, voluptas sunt sit cum quibusdam fuga neque, numquam quis expedita
-                        alias?
-                        Nam quaerat ex, quas similique, tenetur, accusamus quasi eum sint incidunt ipsam quo pariatur
-                        aliquam
-                        natus quos molestias impedit perferendis obcaecati error animi vitae ab consequuntur cupiditate
-                        sunt
-                        nostrum? Necessitatibus, at libero, ipsa perspiciatis dolor nobis eligendi temporibus repellat
-                        sunt
-                        ad
-                        fugit error magni sed dolores illum eum dignissimos quod? Vel a excepturi corporis saepe quia,
-                        voluptatum possimus magni adipisci nam voluptatibus. Distinctio velit harum nobis modi, ut quia
-                        corrupti
-                        eaque amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nostrum voluptas
-                        molestiae alias reiciendis velit, recusandae temporibus impedit cumque asperiores veritatis
-                        dolorem ipsam nobis, a delectus magni eveniet laborum ut esse. Et a beatae ab labore voluptatem
-                        distinctio ipsam vero fuga vitae illo eius repellendus non placeat tenetur explicabo eum facilis
-                        eligendi hic exercitationem cum, deserunt, harum, unde sit dolor! Qui natus eligendi suscipit.
-                        Modi id facere quaerat? Itaque fuga unde consequuntur debitis, quae et fugiat eveniet ab officia
-                        facilis quibusdam, hic aut architecto, iusto eos tempora reiciendis incidunt! Consequatur
-                        commodi numquam a impedit saepe. Cum harum possimus maxime placeat quam delectus accusamus
-                        recusandae, nulla iure fugiat, vel tenetur! Porro nihil delectus deleniti tenetur. Esse
-                        reiciendis optio impedit ipsa iste sequi at, ipsam aperiam dicta consequuntur deleniti nulla
-                        nihil dolor voluptatibus magni mollitia, eos temporibus molestiae vero nemo ratione sint illo
-                        minima qui? Totam repudiandae esse doloremque sunt illo omnis similique? Quaerat quidem esse
-                        rerum incidunt, corporis, eveniet quod blanditiis quibusdam perferendis beatae ipsum laboriosam
-                        quae dignissimos veritatis sit, obcaecati error sequi numquam. At excepturi corrupti perferendis
-                        repudiandae cum, ut sapiente laudantium dignissimos cupiditate eos quam amet dolore quia, iste
-                        provident vero reprehenderit voluptas sequi enim perspiciatis similique. Exercitationem
-                        molestiae ullam modi vitae debitis soluta sapiente suscipit, officia dignissimos iure quaerat
-                        veritatis illum! Delectus neque, tenetur, omnis quas blanditiis reprehenderit amet fugit
-                        consectetur veniam dicta vero iusto aliquam consequatur harum alias quasi esse at natus ea.
-                        Perspiciatis, molestiae. Dolorum nesciunt possimus ad ullam culpa numquam, adipisci rerum, earum
-                        debitis harum repellat corporis eos voluptatem molestias laudantium voluptate sequi eum officia
-                        illum tempore error pariatur doloribus in. Fugiat repudiandae, repellat rem veritatis harum
-                        consequuntur labore natus alias, repellendus laborum deleniti voluptas esse id laboriosam eaque
-                        aliquam? Earum praesentium dolor enim exercitationem eius assumenda, quae modi nobis? Aut dolore
-                        quia animi ipsa sed id voluptatum vero illum similique, consequatur debitis rem, iusto libero
-                        vitae nihil saepe dicta molestias, eum veritatis ut explicabo. Ducimus itaque cum ipsa
-                        consequatur, laudantium recusandae, obcaecati architecto neque explicabo quod ad alias. Dicta
-                        autem exercitationem hic cumque ducimus aperiam totam debitis excepturi quaerat reiciendis,
-                        provident rem esse, ipsam sequi alias laboriosam laborum aliquid atque quibusdam culpa
-                        consequatur repellendus expedita accusamus corporis! Quisquam iste a laborum praesentium, in
-                        quam illo assumenda temporibus vero natus suscipit aliquid magnam dolore ipsa, labore delectus
-                        quidem est, dolores nam accusamus excepturi aut neque totam quas. Reprehenderit autem temporibus
-                        voluptatem unde necessitatibus quis veritatis. Magni dolor optio nesciunt dicta labore sapiente
-                        quod illum sit perferendis! Illum maiores, modi obcaecati reiciendis ad excepturi error
-                        architecto reprehenderit ipsum voluptatibus beatae fugiat vero autem exercitationem, eius
-                        tempore voluptates aliquam, officia dolores aliquid culpa. Porro minima ipsum voluptas omnis
-                        possimus. Quaerat, nisi facilis ex incidunt ullam at sint cupiditate, similique dolore commodi
-                        illum id quis nihil enim error maiores accusamus modi consequatur suscipit iusto consectetur
-                        exercitationem! Sequi fugiat adipisci ullam rem voluptatem, mollitia ipsum autem minima enim
-                        amet cum error! Rem dignissimos earum error esse repellat possimus similique maiores dolorum
-                        blanditiis dicta doloribus recusandae, iure asperiores fugiat officiis animi aut accusantium
-                        facere ullam. Laudantium perferendis qui nobis odit culpa aliquam expedita commodi voluptatum,
-                        recusandae maxime consequatur! Temporibus dolorem at inventore unde nulla quam optio explicabo,
-                        possimus animi ullam nobis ad quasi quas? Voluptas excepturi veritatis iusto alias eos officia,
-                        tempora labore distinctio aut. Et ratione repellendus culpa vitae, molestiae officiis fuga eos
-                        facilis ipsam, necessitatibus earum doloribus aspernatur. Optio blanditiis quis eveniet. Vero
-                        eveniet voluptatem consequuntur est ducimus maxime nemo amet, obcaecati cum suscipit culpa sed
-                        rem odio blanditiis aut placeat! Vero fuga magnam blanditiis provident minus, voluptatibus et
-                        ducimus laboriosam porro a nobis velit totam possimus illo dolores quam! Corrupti ipsa, quidem
-                        consectetur quaerat porro vero. Cum ad, unde ipsam blanditiis voluptatem, nemo molestias
-                        quibusdam consectetur deleniti possimus praesentium a dolorem, earum magnam quae dicta quisquam
-                        autem corporis velit est quas enim eos. Vel repellendus voluptatibus, mollitia culpa illo
-                        debitis delectus officiis eaque laudantium ducimus soluta illum possimus quos sed, quo maiores
-                        est excepturi nisi molestiae aspernatur quia. Aliquam qui, eveniet numquam saepe fuga totam
-                        commodi? Numquam vel molestias reprehenderit ratione placeat delectus fugit asperiores
-                        consequatur repellat illo? Molestias hic doloremque voluptates blanditiis commodi veniam?
-                        Adipisci qui nulla ratione neque eius placeat vero voluptas aliquid, fuga facilis voluptates
-                        consequatur suscipit mollitia est repellat molestias possimus quas. Nesciunt rem amet numquam
-                        ipsa quas impedit aliquid ea officiis recusandae ipsam accusamus perspiciatis, aut repudiandae.
-                        Omnis ut veniam aut perferendis blanditiis deserunt quibusdam consequuntur. Quae quos harum
-                        reiciendis quasi dolor repudiandae rerum dolorum doloremque, consequatur in pariatur deserunt
-                        culpa iste repellendus, sint reprehenderit? Expedita ad pariatur vel temporibus harum quod
-                        aliquam reiciendis obcaecati animi, sunt veritatis deserunt ipsam asperiores ratione odit fuga
-                        ipsa autem consequatur magni. Exercitationem dolor labore ratione modi veritatis? Ea architecto
-                        accusantium eum repudiandae quam voluptate eius, aliquam magni vel quisquam illo molestiae nisi
-                        accusamus ipsam sequi explicabo hic, nemo tenetur reiciendis qui praesentium sapiente dolorum?
-                        Tempore architecto excepturi minima, soluta officia dolores cum! Veniam at, nulla distinctio
-                        iusto sit quaerat quo illum sunt aliquam est incidunt, blanditiis repellendus quis vero
-                        assumenda, beatae ratione. Quam vitae quae inventore laboriosam adipisci reprehenderit natus
-                        earum quisquam, modi repellendus numquam quos. Natus voluptas et vitae, eius ab facere. Impedit,
-                        obcaecati fuga asperiores porro rem optio quibusdam dicta consectetur corrupti? Deserunt quas
-                        aliquid culpa pariatur, sint ullam inventore repellendus temporibus atque similique quidem eos
-                        et incidunt ut illo quos quod rem magni a modi optio ipsam natus necessitatibus. Dicta provident
-                        deserunt ex, perferendis ea nemo voluptatum sint, possimus cumque, excepturi illum aliquam
-                        dolorum exercitationem tempora nisi praesentium. Veniam expedita asperiores, tempore, hic nisi
-                        ut aliquam, delectus fugit fuga laborum voluptate sapiente nihil. Ex velit sequi sunt pariatur
-                        inventore, nobis voluptates amet at, sit iste odit non nulla maxime distinctio voluptatem
-                        doloribus! Officiis placeat atque iste numquam eius iure distinctio, aspernatur fugit quasi nisi
-                        odit qui maiores omnis animi corrupti. Eaque excepturi blanditiis eius nobis reprehenderit
-                        accusamus vitae aliquam magni, perferendis harum odit eos iste adipisci suscipit fuga minus
-                        magnam consectetur officia nesciunt impedit quae ipsa. Saepe, ut minima? Totam, enim unde?
-                    </div>
-                    <div class="col-4 border">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nesciunt distinctio
-                        repellendus
-                        saepe nihil rem ad voluptate dolor cumque corrupti, suscipit dolorem perspiciatis aspernatur sit
-                        laboriosam illum sunt libero aperiam, illo magni exercitationem tenetur. Quae laborum alias
-                        doloribus,
-                        saepe quos, vel assumenda magni commodi corrupti ea deleniti! Voluptatem, dolorum neque.
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </div>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <div class="container offset-2 mt-4 middlearea">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="card mb-4">
+                    <div class="card-body d-flex">
+                        <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                            <img class="storyphoto img-fluid" alt="Instagram" class="s4Iyt"
+                                src="./images/kodluyoruz.jpeg">
+                            <span class="storytext">kodluyoruz</span>
+                        </a>
+                        <a href="https://www.instagram.com/hakanyalcinkaya" style="text-decoration: none;"
+                            target="_blank">
+                            <img src="./images/hakan-yalçınkaya.jpeg" class="storyphoto img-fluid" />
+                            <span class="storytext">hakanyalcin..</span>
+                        </a>
+                        <a href="https://www.instagram.com/elonrmuskk" style="text-decoration: none;" target="_blank">
+                            <img src="./images/elon-musk.jpeg" class="storyphoto img-fluid" />
+                            <span class="storytext">elonrmuskk</span>
+                        </a>
+                        <a href="#" style="text-decoration: none;" target="_blank">
+                            <img src="./images/baris.jpg" class="storyphoto img-fluid" />
+                            <span class="storytext">barisozcan</span>
+                        </a>
+                        <a href="#" style="text-decoration: none;" target="_blank">
+                            <img src="./images/1.jpg" class="storyphoto img-fluid" />
+                            <span class="storytext mr-2">johnadam</span>
+                        </a>
+                        <a href="https://www.instagram.com/kablosuzbeyin/" style="text-decoration: none;"
+                            target="_blank">
+                            <img src="./images/2.jpg" class="storyphoto img-fluid" />
+                            <span class="storytext">adamsmith</span>
+                        </a>
+                        <a href="#" style="text-decoration: none;" target="_blank">
+                            <img src="./images/3.jpg" class="storyphoto img-fluid" />
+                            <span class="storytext">travelparis</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./images/taha.jpg" class="mr-2"
+                            style="width: 35px; height: 35px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>tahacagrimen</strong></span>
+                        <span class="float-right mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+                    </div>
+                    <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg" class="card-img-top"
+                        alt="..." />
+                    <ul class="list-group list-group-horizontal mt-1" style="list-style-type: none; border: 0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                                    style="color: black; position: relative; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "></i></a>
+                        </li>
+                        <span class="offset-7">
+                            <li class="nav-item ml-4">
+                                <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
+                                        style="color: black; position: relative; font-size: 23px"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                    <span>
+                        <img src="./images/elon-musk.jpeg" class="mb-1 ml-3"
+                            style="width: 23px; height: 23px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>elonrmuskk</strong> ve
+                            <strong>42 diğer kişi</strong> beğendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">tahacagrimen</strong>Burası Rize!
+                            Harika bir cennet!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  ">
+                                15 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok
+                            güzelmiş yaa! Bir gün götürürsün artık bizi de:)
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful
+                            view bro! I always want to travel Rize...
+                        </p>
+                        <p class="card-text" style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer" style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span><span class="float-right"
+                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                    </div>
+                </div>
+                <div class="card mt-5 mb-3">
+                    <div class="card-header">
+                        <img src="./images/kodluyoruz.jpeg" class="mr-2"
+                            style="width: 35px; height: 35px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>kodluyoruz</strong></span>
+                        <span class="float-right mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+                    </div>
+                    <img src="https://pbs.twimg.com/media/Erx2B2bXAAEy7gO.jpg" class="card-img-top" alt="..." />
+                    <ul class="list-group list-group-horizontal mt-1" style="list-style-type: none; border: 0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                                    style="color: black; position: relative; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "></i></a>
+                        </li>
+                        <span class="offset-7">
+                            <li class="nav-item ml-4">
+                                <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
+                                        style="color: black; position: relative; font-size: 23px"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                    <span>
+                        <img src="./images/taha.jpg" class="mb-1 ml-3"
+                            style="width: 23px; height: 23px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>tahacagrimen</strong> ve
+                            <strong>670 diğer kişi</strong> beğendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">kodluyoruz</strong>Barış Balta ile AWS
+                            Quick Start Etkinliği #1 30 Ocak Cumartesi günü saat 10:00-15:30'da!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  ">
+                                60 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Harika!
+                            Kesinlikle katılacağım! :)
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">kablosuzbeyin</strong>Topluluk olarak
+                            heyecanlıyız!
+                        </p>
+                        <p class="card-text" style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer" style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span><span class="float-right"
+                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                    </div>
+                </div>
+                <div class="card mt-5 mb-3">
+                    <div class="card-header">
+                        <img src="./images/elon-musk.jpeg" class="mr-2"
+                            style="width: 35px; height: 35px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>elonrmuskk</strong></span>
+                        <span class="float-right mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+                    </div>
+                    <img src="https://i.insider.com/5f1b201a5af6cc7e1b741330?width=1136&format=jpeg"
+                        class="card-img-top" alt="..." />
+                    <ul class="list-group list-group-horizontal mt-1" style="list-style-type: none; border: 0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                                    style="color: black; position: relative; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                      color: black;
+                      position: relative;
+                      font-size: 23px;
+                      margin-left: -11px;
+                    "></i></a>
+                        </li>
+                        <span class="offset-7">
+                            <li class="nav-item ml-4">
+                                <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
+                                        style="color: black; position: relative; font-size: 23px"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                    <span>
+                        <img src="./images/taha.jpg" class="mb-1 ml-3"
+                            style="width: 23px; height: 23px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>tahacagrimen</strong> ve
+                            <strong>900.182 diğer kişi</strong> beğendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">elonrmussk</strong>That's just
+                            beautiful!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  ">
+                                1500 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Yeah! Here you
+                            go!
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">spacex</strong>When are we moving?
+                        </p>
+                        <p class="card-text" style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer" style="
+                color: rgb(139, 133, 133);
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span><span class="float-right"
+                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 d-sm-none d-md-block">
+                <div class="card col-xs-12 rightpanel" id="sticky-sidebar" style="width: 18rem">
+                    <div class="card-body d-flex">
+                        <div>
+                            <a class="nav-link" href="#">
+                                <span>
+                                    <img src="./images/taha.jpg" class="" style="
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                      border: 2px solid rgb(238, 39, 82);
+                      margin-left: -15px;
+                    " /><span class="" style="
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                        'Helvetica Neue', sans-serif;
+                      font-size: 15px;
+                      color: black;
+                      margin-left: 20px;
+                    "><strong>tahacagrimen</strong>
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="mt-2">
+                                <span class="mt-5" style="
+                      font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                        sans-serif;
+                      font-size: 15px;
+                      color: gray;
+                    ">Senin İçin Öneriler</span>
+                                <span class="float-right postuserfont mt-1" style="font-size: 12px"><strong>Tümünü
+                                        Gör</strong></span>
+                            </div>
+                            <div class="mt-2 ml-2">
+                                <div>
+                                    <span><img src="./images/kablosuz-beyin.jpeg"
+                                            style="width: 30px; height: 30px; border-radius: 50%" />
+                                    </span>
+                                    <a href="https://www.instagram.com/kablosuzbeyin" target="_blank">
+                                        <span class="postuserfont ml-2 mt-1"><strong>kablosuzbeyin</strong></span>
+                                        <span class="postuserfont float-right"
+                                            style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                                Et</strong></span>
+                                    </a>
+                                </div>
+                                <div class="mt-3">
+                                    <span><img
+                                            src="https://media-exp1.licdn.com/dms/image/C4D0BAQEG_MlSuwzeFw/company-logo_100_100/0/1573099722403?e=1651708800&amp;v=beta&amp;t=w5-Z2zlNwyZENRh662A06EPzR59Gnq2YbNcn7mYjvdk"
+                                            style="width: 30px; height: 30px; border-radius: 50%" />
+                                    </span>
+                                    <a href="https://www.instagram.com/codecraftcom" target="_blank">
+                                        <span class="postuserfont ml-2 mt-1"><strong>codecraftcom </strong></span>
+                                        <span class="postuserfont float-right"
+                                            style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                                Et</strong></span>
+                                    </a>
+                                </div>
+                                <div class="mt-3">
+                                    <span><img
+                                            src="https://media-exp1.licdn.com/dms/image/C4D0BAQGKi25Vo-YjDA/company-logo_100_100/0/1634553374919?e=1651708800&amp;v=beta&amp;t=bai8goiV1q77V5CzshL7UpX-2R-5H_UrQ-QuoRPBJbg"
+                                            style="width: 30px; height: 30px; border-radius: 50%" />
+                                    </span>
+                                    <a href="https://www.instagram.com/navlungotr" target="_blank">
+                                        <span class="postuserfont ml-2 mt-1"><strong>navlungotr</strong></span>
+                                        <span class="postuserfont float-right"
+                                            style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                                Et</strong></span>
+                                    </a>
+                                </div>
+                                <div class="mt-3">
+                                    <span><img
+                                            src="https://media-exp1.licdn.com/dms/image/C4D0BAQF7ydVqrVTvqg/company-logo_100_100/0/1587802313117?e=1651708800&amp;v=beta&amp;t=oKzPtLb7F8JKs3tYm7j5wvG6rnLrmMp86OzB6ZgQZNg"
+                                            style="width: 30px; height: 30px; border-radius: 50%" />
+                                    </span>
+                                    <a href="https://www.instagram.com/podfreshco" target="_blank">
+                                        <span class="postuserfont ml-2 mt-1"><strong>podfreshco</strong></span>
+                                        <span class="postuserfont float-right"
+                                            style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                                Et</strong></span>
+                                </div>
+                                <div class="mt-3">
+                                    <span><img src="./images/kodluyoruz.jpeg"
+                                            style="width: 30px; height: 30px; border-radius: 50%" />
+                                    </span>
+                                    <a href="https://www.instagram.com/kodluyoruz_junior" target="_blank">
+                                        <span class="postuserfont ml-2 mt-1"><strong>Kodluyoruz Junior</strong></span>
+                                        <span class="postuserfont float-right"
+                                            style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                                Et</strong></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ml-2 mt-2"
+                                style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                <span><a href="https://about.instagram.com/" target="_blank"
+                                        class="rightpanellinks">Hakkında</a> <a href="https://help.instagram.com/"
+                                        target="_blank" class="rightpanellinks">Yardım</a> <a
+                                        href="https://about.instagram.com/blog/" class="rightpanellinks">Basın</a> <a
+                                        href="https://www.instagram.com/developer/" class="rightpanellinks">API</a> <a
+                                        href="https://www.instagram.com/about/jobs/" class="rightpanellinks">İş
+                                        Fırsatları</a> <a href="https://www.instagram.com/legal/privacy/"
+                                        class="rightpanellinks">Gizlilik</a></span>
+                                <span><a href="https://www.instagram.com/legal/terms/"
+                                        class="rightpanellinks">Koşullar</a> <a
+                                        href="https://www.instagram.com/explore/locations/"
+                                        class="rightpanellinks">Konumlar</a> <a
+                                        href="https://www.instagram.com/directory/profiles/"
+                                        class="rightpanellinks">Başlıca Hesaplar</a> <a
+                                        href="https://www.instagram.com/directory/hashtags/"
+                                        class="rightpanellinks">Konu Etiketleri</a> Dil</span>
+                                <p></p>
+                                <p style="font-size: 12px;">© 2021 INSTAGRAM FROM KODLUYORUZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

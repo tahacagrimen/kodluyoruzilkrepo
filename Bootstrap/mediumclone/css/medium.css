@@ -1,0 +1,12 @@
+.bg-yellow {
+  background-color: #ffc017;
+}
+
+.border-bottom-dark {
+  border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
+}
