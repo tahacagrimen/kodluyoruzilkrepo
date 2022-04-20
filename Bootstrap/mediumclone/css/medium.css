@@ -10,3 +10,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "PT Serif", serif;
 }
+
+.logo {
+  width: 175px;
+}
+
+.aside-list > li {
+  margin-bottom: 7px;
+}
