@@ -1,57 +1,33 @@
-const inputDOM = document.querySelector("#task");
-const addBtnDOM = document.querySelector("#liveToastBtn");
 const ulDOM = document.querySelector("#list");
-const containerDOM = document.querySelector(".container");
-const list = document.querySelectorAll("li");
-const removeBtn = document.querySelector("#remove-btn");
+const inputDOM = document.querySelector("#task");
+const inputAddDOM = document.querySelector("#liveToastBtn");
 
-const alertdiv = `<div class="alert alert-warning alert-dismissible fade show" role="alert">
-<strong>Hey!</strong> Boş bırakmayınız.
-<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-</button>
-</div>`;
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!
-
-function deleteList(e) {
-  if (e.target.classList.contains("bg-success")) {
-    e.target.parentElement.remove();
-  }
-}
-
-function alertDOM() {
-  const div = document.createElement("div");
-  containerDOM.prepend(div);
-  div.innerHTML = alertdiv;
-}
-
-addBtnDOM.addEventListener("click", () => {
-  if (inputDOM.value.trim() !== "") {
-    const liDOM = document.createElement("li");
-    liDOM.innerHTML = inputDOM.value;
-    ulDOM.appendChild(liDOM);
+inputAddDOM.addEventListener("click", function () {
+  if (inputDOM.value.trim()) {
+    ulDOM.innerHTML += `<li class="d-flex justify-content-between align-items-center">
+    <div>${inputDOM.value}</div>
+    <div><i class="bi bi-x-lg"></i></div>
+    </li>`;
     inputDOM.value = "";
   } else {
-    alertDOM();
+    alert("Lütfen bir görev giriniz");
   }
-});
 
-removeBtn.addEventListener(
-  "click",
-  list.forEach((item) => {
-    if (item.classList.contains("bg-success")) {
-      item.parentElement.remove();
-    }
-  })
-);
+  const delBtn = document.querySelectorAll(".bi");
+  delBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.parentElement.parentElement.remove();
+    });
+  });
 
-list.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (item.classList.contains("bg-success")) {
-      item.classList.remove("bg-success");
-    } else {
-      item.classList.add("bg-success");
-    }
+  const liDOM = document.querySelectorAll("li");
+  liDOM.forEach((li) => {
+    li.addEventListener("click", function () {
+      if (this.classList.contains("bg-success")) {
+        this.classList.remove("bg-success");
+      } else {
+        this.classList.add("bg-success");
+      }
+    });
   });
 });
