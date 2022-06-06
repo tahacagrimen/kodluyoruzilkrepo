@@ -126,9 +126,9 @@ window.addEventListener("load", () => {
     const menuItems = document.querySelectorAll(".menu-items");
     menuItems.forEach((item) => {
       if (category === "All") {
-        item.style.display = "block";
+        item.style.display = "flex";
       } else if (item.classList.contains(category)) {
-        item.style.display = "block";
+        item.style.display = "flex";
       } else {
         item.style.display = "none";
       }
