@@ -1,22 +1,25 @@
 .navbarbg {
   height: 55px;
   background-color: white;
-  display: flex;
 }
-
+.first-nav {
+  border-bottom: 1px solid rgb(236, 235, 235);
+}
 input.searche {
   height: 36px;
-  max-width: 500px;
+  max-width: 200px;
   background-color: #eef3f8;
   border: 0;
 }
-
+.search-form {
+  max-width: 230px;
+}
+.form-inline img {
+  width: 6%;
+}
 input.searche::placeholder {
   font-size: 14px;
   color: gray;
-  background-image: url(/bootstraplinkedinclone/assets/search-solid.svg);
-  background-repeat: no-repeat;
-  background-size: 7%;
 }
 
 .body {
@@ -35,8 +38,12 @@ input.searche::placeholder {
   color: black;
 }
 
+.me {
+  margin-top: -4px;
+}
+
 button.mediatext {
-  color: #5f5f5f;
+  border: none;
 }
 
 button.mediatext:hover {
@@ -47,7 +54,6 @@ button.mediatext:hover {
   font-size: 15px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  color: #5f5f5f;
 }
 
 i {
@@ -58,21 +64,23 @@ i:hover {
   color: black;
 }
 
+.second-body {
+  padding-top: 80px;
+}
+
 input.content {
+  background-color: #ece8e8;
   border-radius: 40px;
   height: 45px;
 }
-input.content::placeholder {
-  font-weight: bolder;
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url(/bootstraplinkedinclone/assets/edit-regular.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
+input.content:hover {
+  background-color: #ece8e8;
+  cursor: pointer;
 }
 
-div.card {
+.content {
   border-radius: 10px;
+  background-color: #fff;
 }
 
 .header {
@@ -84,7 +92,7 @@ div.card {
 .view {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   color: #5f5f5f;
 }
@@ -110,17 +118,22 @@ li {
 }
 
 button.ref {
-  color: white;
+  border: none;
+  background-color: white;
 }
 
 button.ref:hover {
   color: #5f5f5f;
 }
-
+button.newbtn {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
 .postphoto {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  float: left;
 }
 .posttext {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
